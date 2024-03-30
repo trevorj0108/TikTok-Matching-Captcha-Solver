@@ -95,6 +95,7 @@ class captcha():
         whitecount = 0
         
         # This will loop through all the pixel values and remove all shadows as well as convert letters and numbers to masks (black)
+        # Looping is unfortunately necessary for custom masking
         
         for r in range(0,self.height):
             for c in range(0,self.width):
